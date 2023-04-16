@@ -1,0 +1,233 @@
+//public static void main (String [] args ){
+	/*
+		int a [] = {1,2,3,4,5,6,7,1,2,3,1,2,3,4};
+		//Arrays.sort(a);
+		int count =0;
+
+		for(int i=0; i<a.length; i++){
+			count = 0;
+			for(int j=i+1; j<a.length; j++){
+				if(a[i]==a[j]){
+					a[j] = '*';
+					count = count+1;
+				}
+			}
+			if(count>=1 &&a[i]!='*'){
+				System.out.print(a[i] + " ");
+			}
+		}
+		}	*/
+
+
+	/*public static void main (String [] args ){
+
+		String name = "karthikkarthikz";
+		char [] value = name.toCharArray();
+
+		//Arrays.sort(value);
+
+		int temp = 0;
+		for(int i =0; i<value.length; i++){
+
+			temp = 0;
+
+			for(int j =i+1; j<value.length; j++){
+
+
+				if(value[i]==value[j]){
+
+					value[j] = '*';
+					temp = temp+1;
+
+				}
+
+			}
+
+			if(value[i]!='*'){
+				System.out.print(value[i]);
+			}
+
+		}*/
+	/*	public static void main (String [] args ){
+
+		String name = "  Aiite is the best academy is the best academy ";
+		name = name.trim();
+		String orgina [] = name.split(" ");
+
+		int temp = 0;
+		for(int i =0; i<orgina.length; i++){
+
+			temp = 0;
+
+			for(int j =i+1; j<orgina.length; j++){
+
+
+				if( orgina[i].equals(orgina[j])){
+
+					orgina[j] = "*";
+					temp = temp+1;
+
+				}
+
+			}
+
+			if( orgina[i]!="*"){
+				System.out.print(orgina[i] + " ");
+			} 
+
+		}
+
+	}
+	 */
+
+
+
+	/*	public static void main (String [] args ){
+
+		String name = "  Aiite is the best academy is the best academy Aiite Karthik ";
+		name = name.trim();
+		String orgina [] = name.split(" ");
+
+
+		HashSet <String> obj = new LinkedHashSet(Arrays.asList(orgina));
+
+		System.out.println(obj);
+
+
+	}
+	 */
+	/*public static void main (String [] args ){
+
+		String name = "karthikeyan";
+		char val [] = name.toCharArray();
+
+		Map <Character, Integer> obj = new LinkedHashMap ();
+
+
+	for (char d : val) {
+
+		if(obj.containsKey(d)){
+
+		obj.put(d, obj.get(d)+1);
+
+		}
+		else
+		{
+
+		obj.put(d, 1);
+		}
+
+
+
+		}
+
+	System.out.println(obj);
+	}}
+
+
+	 */
+
+	/*public static void main(String[] args) {
+	int a [] = {1,2,3,4,5,6,7,1,2,3,1,2,3,4};
+	Integer obj []= new Integer [a.length] ;
+
+	for (int i = 0; i < a.length; i++) {
+		obj [i] =  a [i];
+	}
+
+	Set obsj = new LinkedHashSet ();
+
+	for (Integer object : obj) {
+		obsj.add(object);
+	}
+
+	System.out.println(obsj);
+
+
+
+}
+}*/
+
+	/*public static void main (String [] args ){
+
+		String name = "karthikeyan is the good boy karthikeyan is ";
+		String val [] = name.split(" ");
+
+		Map <String, Integer> obj = new LinkedHashMap ();
+
+
+		for (String string : val) {
+
+
+
+			if(obj.containsKey(string)){
+
+				obj.put(string , obj.get(string)+1);
+
+			}
+			else
+			{
+
+				obj.put(string, 1);
+			}
+
+
+
+		}
+		System.out.println(obj);
+
+
+	}}*/
+
+public static void main (String [] args ){
+
+
+
+		int a [] = {10,20,30,5,2,1};
+		int temp  = 0;
+
+		for(int i =0; i<a.length; i++){
+
+
+			for(int j =i+1; j<a.length; j++){
+
+				if(a[i]>a[j]){
+//					temp = a[i];
+//					a[i] = a[j];
+//					a[j] = temp;
+					
+					a[i] = a[i]+a[j];  //15
+					a[j] = a[i]-a[j]; // 15-5 =10
+					a[i] = a[i]-a[j]; //15-10 = 5
+
+				}
+
+
+
+			}
+		}
+
+		
+		for (int i : a) {
+			System.out.print(i + " ");
+		}
+		
+		
+	}}
+
+
+
+/*public static void main(String[] args) {
+	
+	int a = 20;
+	int b = 10;
+	
+	a = a+b; // 30
+	b = a-b; // 20  --->20
+	a = a-b; //10 ------>10
+	
+	
+	System.out.println(a);
+	System.out.println(b);
+}}
+*/
